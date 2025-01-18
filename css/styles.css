@@ -1,0 +1,79 @@
+/* Aplica la fuente Urbanist en todo el cuerpo */
+body {
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo Parallax */
+.parallax-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos del formulario */
+.container {
+    padding-top: 30px;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Estilo del formulario de login */
+.input-field {
+    margin-bottom: 20px;
+}
+
+/* Estilo de los iconos de Font Awesome dentro de los inputs */
+.input-field i {
+    color: #00796b;
+}
+
+/* Estilo del botón de login */
+.btn-large {
+    background-color: #00796b;
+    width: 100%;
+}
+
+.btn-large:hover {
+    background-color: #004d40;
+}
+
+/* Estilos adicionales de tarjetas para mejorar la apariencia */
+.card {
+    background-color: white;
+}
+
+/* Estilo del texto del botón de inicio de sesión */
+.btn-large i {
+    margin-right: 8px;
+}
+
+/* Estilos para asegurarse de que todo se vea bien en pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+}
