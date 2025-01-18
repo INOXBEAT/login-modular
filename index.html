@@ -3,29 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido</title>
+    <title>Página de Bienvenida</title>
 
-    <!-- Bootstrap 5 CSS (CDN) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Materialize CSS (CDN) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 
     <!-- Font Awesome (CDN) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+    <!-- Google Fonts: Urbanist -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-</head> 
+</head>
 <body>
 
+    <!-- Main Content -->
     <div class="container">
-        <div class="row justify-content-center align-items-center" style="height: 100vh;">
-            <div class="col-12 col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Bienvenido al sistema</h5>
-                        <p class="text-center">¡Has iniciado sesión correctamente!</p>
-                        <!-- Botón de Cerrar Sesión -->
-                        <button id="logoutBtn" class="btn btn-danger w-100">Cerrar sesión</button>
+        <div class="section">
+            <h1 class="center-align">¡Bienvenido a tu Dashboard!</h1>
+            <p class="center-align">A continuación encontrarás los accesos a tu contenido y más.</p>
+
+            <!-- Action Cards -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/4050344/pexels-photo-4050344.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Imagen de tarjeta">
+                            <span class="card-title">Mis Tareas</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Accede a tus tareas pendientes y gestionálas de manera fácil.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Ver Tareas</a>
+                        </div>
                     </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/2055500/pexels-photo-2055500.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Imagen de tarjeta">
+                            <span class="card-title">Mensajes</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Consulta tus mensajes y mantente en contacto con tu equipo.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Ver Mensajes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Imagen de tarjeta">
+                            <span class="card-title">Perfil</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Actualiza tu perfil y ajusta tus preferencias.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Ver Perfil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action Button -->
+            <div class="row">
+                <div class="col s12 center-align">
+                    <a href="login.html" class="btn-large waves-effect waves-light">Cerrar sesión <i class="fas fa-sign-out-alt"></i></a>
                 </div>
             </div>
         </div>
@@ -34,22 +85,11 @@
     <!-- jQuery (CDN) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- Bootstrap 5 JS (CDN) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>
-
-    <!-- Script para cerrar sesión -->
-    <script>
-        $(document).ready(function() {
-            // Manejo del clic en el botón de Cerrar Sesión
-            $('#logoutBtn').on('click', function() {
-                // Redirigir a la página de login
-                window.location.href = 'login.html';
-            });
-        });
-    </script>
 
 </body>
 </html>
